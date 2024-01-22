@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+button, input{
+  outline: none;
+  border: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+body{
+  background: rgb(183, 178, 178);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*  form  */
+form{
+  margin-top: 1rem;
+  display: flex;
+}
+
+form > * {
+  background: #fff;
+  height: 3rem;
+  font-weight: 400;
+  color: #000000d4
+}
+
+input{
+  padding: 0 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  font-size: 22px;
+}
+
+#search{
+border-top-right-radius: 2rem;
+border-bottom-right-radius: 2rem;
+padding: 0  1.5rem;
+font-size: 18px;
+transition: background 0.2s ease;
+}
+
+#search:hover{
+  background: #e8e8e8;
+}
+
+/*  card  */
+#card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  width: max-content;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+
+#card_avatar{
+  border-radius: 100%;
+  width: 10rem;
+}
+
+#card_login{
+  font-weight: normal;
+  font-size: 50px;
+}
+
+#card_location{
+  font-size: 18px;
+  margin-top: -1rem;
+  color: rgba(0, 0, 0, 0.587);
+  font-weight: 400;
+}
+
+#card_bio{
+  font-weight: 400;
+}
+
+#card_delete-button{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  background: #e32636e2;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+#card:hover #card_delete-button{
+  opacity: 100%;
+}
